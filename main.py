@@ -49,7 +49,7 @@ def show_charts(concatenated_df, type):
     with c1:
         st.metric("Energi", value = f"{int(np.sum(concatenated_df['kW'])):,} kWh".replace(",", " "))
     with c2:
-        st.metric("Maksimal effekt", value = f"{int(np.max(concatenated_df['kW'])):,} kWh".replace(",", " "))
+        st.metric("Maksimal effekt", value = f"{int(np.max(concatenated_df['kW'])):,} kW".replace(",", " "))
 
 # kjøring av skriptet
 if __name__ == '__main__':
